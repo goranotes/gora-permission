@@ -1,8 +1,9 @@
-package com.goranotes.gorapermission
+package com.goranotes.permission
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.goranotes.gorapermission.Permission
 
 class MainActivity: AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class MainActivity: AppCompatActivity() {
         val resultPermission = Permission.handlePermissionsResult(permissions, grantResults, this)
         if(resultPermission.permissionGranted) {
             when (resultPermission.permissionType) {
-                Permission.PermissionType.READ_CONTACTS -> {
+               Permission.PermissionType.READ_CONTACTS -> {
                     try {
                         Toast.makeText(this, "Permission Read Contact is Granted", Toast.LENGTH_SHORT).show()
                     }catch (e: Exception){

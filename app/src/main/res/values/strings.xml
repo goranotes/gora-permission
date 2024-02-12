@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">Gora permission</string>
-
-    <string name="permission_contact_not_granted">You need to grant access Contact</string>
-    <string name="permission_phone_not_granted">You need to grant access Phone</string>
-    <string name="permission_storage_not_granted">You need to grant access Storage</string>
-    <string name="permission_location_not_granted">You need to grant access Location</string>
 </resources>
